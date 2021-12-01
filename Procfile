@@ -1,0 +1,1 @@
+web: gunicorn scienZ.wsgi --log-file -
