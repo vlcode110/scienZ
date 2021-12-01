@@ -1,0 +1,87 @@
+<html lang='en'>
+<title>Cool science expalined</title>
+<head>
+    <meta charset='utf-8' />
+    <meta name="description" content="Free science lessons" />
+    <meta name="keywords" content="Popular science" />
+    <meta name="description" content="scientific concepts" />
+    <meta name="keywords" content="Physics" />
+    <meta name="keywords" content="Quantum theory, space, astronomy, asrophysics, physics, quantum, computers, quantum computers" />
+    <meta name="author" content="Veronika Liutarevich" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+    <link rel='stylesheet' href='style_for_scienz.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Share+Tech+Mono&family=Source+Code+Pro&family=Spectral:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Condensed:ital,wght@1,300&family=Share+Tech+Mono&family=Source+Code+Pro&family=Spectral:wght@500&display=swap" 
+    rel="stylesheet">
+    
+</head>
+
+
+<body id='#main'>
+<div id='menu'>
+        <img id='logo' src= 'main/scienz_logo.png' />
+        <div class='menuSub1' style='display: none'>
+            Quant
+        </div>
+        <div class='menuSub2' style='display: none'>
+            Cosmo
+        </div>
+        <div class='menuSub3' style='display: none'>
+            Nano
+        </div>
+        <div class='menuSub4' style='display: none'>
+            Comps
+        </div>
+        <div class="topnav" style='display: none'>
+            
+            <input type="text" class="topnav" placeholder="Search..">
+        </div>
+          
+        
+    </div>
+
+
+
+
+
+
+
+{% load crispy_forms_tags %}         
+
+<div class="container py-5">
+	<h1>Register</h1>
+
+    <div class='subtopic' id='regSub'>Register to be able to:
+<ul>
+    <li>Add bookmarks to the prequisite articles that you have stopped on</li>
+    <li>Save articles to your account</li>
+    <li>Access the concepts with similar prequisites to expand your knowledge</li>
+</ul>
+	<form method="POST">
+		{% csrf_token %}
+		{{ register_form|crispy }}                    
+		<button class="btn btn-primary" type="submit">Register</button>
+	</form>
+	<p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body></html>

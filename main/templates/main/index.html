@@ -1,0 +1,219 @@
+{% extends "main/top_menu_no_contact.html" %}
+{% load static %}
+
+
+
+{% block content %} 
+<div id='main'>
+    <div class='holder'>
+        
+  
+  <h1>Welcome to scien-Z.com ! <h1>
+    <h2>We share articles on the most exciting topics of modern science in a way that everyone can understand. 
+      Prequisite knowledge on every topic can be found is you click on the arrow or swipe to the right.  </h2>
+      <br />
+      <h2>Everyone will find their level</h2>
+      <p>
+      Please, enjoy the articles broken down into comrehensible pieces. Just press the buttoms to the left and to the right in each of the color chunks
+      
+      The vision for the project is to create a system that allows to take any scientific article and break it down to prequisites so that one could understand the topic regardless of their level
+      
+      The system will work like that:
+
+      <ul>
+          <li>1. You log into your account</li>
+          <li>2. You upload an article, or a textbook extract, and the system links them to the pieces of information involved</li>
+          <li>3. You can go as far down the rabbit hole ass you like and as you need</li>
+          <li>4. If you have the rights, you will be able to post the article on the website, or even add the prequisite blocks into the system</li>
+          </ul>
+      
+     We aim to make science more accessible and understandable for everyone.
+      
+      Please note that the project is still in the development stage and the interface is not ready for usage just yet. Sorry bout that(
+      
+      In the meanwhile, enjoy the articles that we already have on our pages!</p>
+    <h3>Science is cool &#128526;</h3>
+    
+  </div>
+                
+  {% endblock %}
+
+  <br />
+{% block textarea %}
+
+  {% include 'main/text_field.html' %}
+
+{% endblock %}
+
+
+<br />
+
+<footnote class='footing'><p class='footing-text'>Should any questions arise, please email <email>support@scien-z.com</email>. 
+                        We are always happy tohear from fellow scienZists</p></footnote>
+
+
+
+            
+
+            
+        
+
+
+           
+            
+</div></div>
+
+
+
+
+
+<script type='text/javascript' src=" {% static 'src/jqeery-dev — копия.js' %} "></script>
+
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    
+
+
+
+
+
+
+
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g {% static ';m.parentNode.insertBefore(a,m)' %} 
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'scienzdotcom', 'auto', {});
+      
+      
+      
+      
+      
+      }</script>
+      <script>
+        $(document).ready(() => {
+        
+        
+          $('.menuSub1').on('click',() => {
+            $('#nav-dropdown1').slideToggle('0.05s');
+            $('#nav-dropdown2').hide('0.0000000000000005s');
+            $('#nav-dropdown3').hide('0.0000000000000005s');
+            $('#nav-dropdown4').hide('0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+            
+          });
+          $('.menuSub2').on('click',() => {
+            $('#nav-dropdown2').slideToggle('0.05s');
+            $('#nav-dropdown1').hide('0.0000000000000005s');
+            $('#nav-dropdown3').hide('0.0000000000000005s');
+            $('#nav-dropdown4').hide('0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+          });
+          $('.menuSub3').on('click',() => {
+            $('#nav-dropdown3').slideToggle('0.05s');
+            $('#nav-dropdown2').hide('0.0000000000000005s');
+            $('#nav-dropdown1').hide('0.0000000000000005s');
+            $('#nav-dropdown4').hide('0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+          });
+          $('.menuSub4').on('click',() => {
+            $('#nav-dropdown4').slideToggle('0.05s');
+            $('#nav-dropdown2').hide('0.0.0000000000000005s');
+            $('#nav-dropdown3').hide('0.0.0000000000000005s');
+            $('#nav-dropdown1').hide('0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+          });
+        
+          
+          $('.mySlides').on('click', ()=>{
+            $('#nav-dropdown1').slideUp('0.000005s');
+            $('#nav-dropdown2').slideUp('0.000005s');
+            $('#nav-dropdown3').slideUp('0.000005s');
+            $('#nav-dropdown4').slideUp('0.000005s')
+        
+          });
+        
+          $('.topic').on('click', ()=>{
+            $('#nav-dropdown1').slideUp('0.000005s');
+            $('#nav-dropdown2').slideUp('0.000005s');
+            $('#nav-dropdown3').slideUp('0.000005s');
+            $('#nav-dropdown4').slideUp('0.000005s')
+        
+          });
+        
+        
+           
+        
+        });
+
+        
+
+
+</script>
+
+
+
+
+        
+      
+      <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-7098fbd47ba30034656d.js"],"app":["/app-d0f2b083c4ed3157418d.js"],"component---src-p {% static 'ages-404-js":["/com' %} ponent---src-pages-404-js-14dbd5a21f6e7794edc5.js"],"component---src-pages-index-js":["/component---src-pages-index-js-c4c3e775d0beba8b3c4e.js"]};/*]]>*/</script><script src="/polyfill-7098fbd47ba30034656d.js" nomodule=""></script><script src="/component---src-pages-index-js-c4c3e775d0beba8b3c4e.js" async=""></script><script src="/app-d0f2b083c4ed3157418d.js" async=""></script><script src="/framework-fa3b7d59246c477b5efb.js" async=""></script><script src="/webpack-runtime-7c055bf1ff9131f915ea.js" async=""></script></body></html>

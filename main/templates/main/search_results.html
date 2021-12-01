@@ -1,0 +1,122 @@
+{% extends 'main/top_menu_no_contact.html' %}
+
+{% block content %}
+<br />
+<br />
+<br />
+<br />
+<div class='search_results'>
+
+
+
+
+<!--{% if searched_thing %}-->
+<h1>You searched for ...{{searched_thing}}</h1>
+
+<br />
+{% if searched_thing == 'black body' or searched_thing == 'hot body' or searched_thing == 'emission spectrum' or searched_thing == 'absorbtion spectrum' %}
+
+<h1><a href={% url 'main:black_body' %}>Black body</a></h1>
+
+
+<br />
+{% elif searched_thing == 'black hole' or searched_thing == 'gravity' or searched_thing == 'center of the galaxy' or searched_thing == 'galaxy' or searched_thing == 'space' %}
+
+<h1><a href={% url 'main:galaxies' %}>Galaxies</a></h1>
+<h1><a href={% url 'main:black_holes' %}>Black holes</a></h1>
+
+
+
+
+<br />
+{% elif searched_thing == 'atom' or searched_thing == 'structure' or searched_thing == 'atomic model' or searched_thing == 'bohr' or searched_thing == 'rutherford' or searched_thing == 'bohr' or searched_thing == 'heisenberg' or searched_thing == 'nucleus' or searched_thing == 'orbits' or searched_thing == 'orbitals' or searched_thing == 'energy levels' %}
+
+<h1><a href={% url 'main:atomic_models' %}>Atomic models</a></h1>
+<h1><a href={% url 'main:bohrs_mod' %}>Bohrs model</a></h1>
+<h1><a href={% url 'main:ruth_mod' %}>Rutherfords model</a></h1>
+
+
+
+
+<br />
+{% elif searched_thing == 'heisenbergs uncertainty' or searched_thing == 'uncertainty' or searched_thing == 'heisenberg' %}
+
+<h1><a href={% url 'main:heisenberg_uncertainty' %}>Heisenberg's uncertainty</a></h1>
+
+
+
+
+<br />
+{% elif searched_thing == 'qed' or searched_thing == 'quantum electrodynamics' or searched_thing == 'electrodynamics' or searched_thing == 'photons' or searched_thing == 'dirac' or searched_thing == 'dirac equations' %}
+
+<h1><a href={% url 'main:qed' %}>Quantum electrodynamics</a></h1>
+
+
+<br />
+{% elif searched_thing == 'black body' or searched_thing == 'hot body' or searched_thing == 'emission spectrum' or searched_thing == 'absorbtion spectrum' %}
+
+<h1><a href={% url 'main:black_body' %}>Black body</a></h1>
+
+<br />
+{% elif searched_thing == 'big bang' or searched_thing == 'universe' or searched_thing == 'expansion' %}
+
+<h1><a href={% url 'main:big_bang' %}>Big bang</a></h1>
+<h1><a href={% url 'main:exp_universe' %}>Expansion of the Universe</a></h1>
+
+
+
+<br />
+{% elif searched_thing == 'Bremsstrahlung radiation' or searched_thing == 'Bremsstrahlung' or searched_thing == 'radiation' %}
+
+<h1><a href={% url 'main:brem_rad' %}>Bremsstrahlung radiation</a></h1>
+
+
+{% elif searched_thing == 'Feynman' or searched_thing == 'diagram' or searched_thing == 'Feynman diagram' or searched_thing == 'Feynman diagrams' or searched_thing == 'arrows' or searched_thing == 'photons' %}
+
+<h1><a href={% url 'main:feynman_d' %}>Feynman diagram</a></h1>
+
+{% elif searched_thing == 'higgs' or searched_thing == 'higgs boson' or searched_thing == 'higgs field' or searched_thing == 'symmetry' %}
+
+<h1><a href={% url 'main:higgs' %}>Higgs boson</a></h1>
+
+<br />
+{% elif searched_thing == 'Photoelectric effect' or searched_thing == 'light' or searched_thing == 'electrons' %}
+
+<h1><a href={% url 'main:pe_effect' %}>Photoelectric effect</a></h1>
+
+
+<br />
+{% elif searched_thing == 'stars' or searched_thing == 'evolution' or searched_thing == 'evolution of stars' or searched_thing == 'thermonuclear fusion' or searched_thing == 'pp cycle' or searched_thing == 'thermonuclear' %}
+
+<h1><a href={% url 'main:star_form' %}>Evolution of stars</a></h1>
+<h1><a href={% url 'main:thermonuclear_fus' %}>Thermonuclear fusion</a></h1>
+
+
+<br />
+{% elif searched_thing == 'red dwarf' or searched_thing == 'white dwarf' or searched_thing == 'black dwarf' or searched_thing == 'sun' or searched_thing == 'stars' or searched_thing == 'neutron stars' or searched_thing == 'red giant' %}
+
+<h1><a href={% url 'main:star_form' %}>Evolution of stars</a></h1>
+
+<br />
+{% elif searched_thing == 'quant' or searched_thing == 'quantum computer' or searched_thing == 'quantum teleportation' or searched_thing == 'teleportation' or searched_thing == 'quantum' or searched_thing == 'qubit' or searched_thing == 'computer' %}
+
+<h1><a href={% url 'main:q_comp' %}>Quantum computer</a></h1>
+<h1><a href={% url 'main:q_teleporation' %}>Quantum teleportation</a></h1>
+
+
+
+
+<br />
+{% elif searched_thing == 'algorithms' or searched_thing == 'programs' or searched_thing == 'programming' or searched_thing == 'shors' %}
+
+<h1><a href={% url 'main:q_comp' %}>Quantum computer</a></h1>
+<h1><a href={% url 'main:qc_alg' %}>Quantim computer algorithms</a></h1>
+<h1><a href={% url 'main:shors_alg' %}>Shors algorithm</a></h1>
+{% else %}
+<h1>Sadly, nothing has been found</h1>
+{% endif %}
+<!--{% else %}
+<h1>Weird to see you here, you haven'r really searched for anything</h1>
+{% endif %}-->
+</div>
+{% endblock %}

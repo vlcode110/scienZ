@@ -1,0 +1,567 @@
+{% load static %}
+{% load crispy_forms_tags %} 
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    
+    <meta name="description" content="Free science lessons" />
+    <meta name="keywords" content="Popular science" />
+    <meta name="description" content="scientific concepts" />
+    <meta name="keywords" content="Physics" />
+    <meta name="keywords" content="Quantum theory, space, astronomy, asrophysics, physics, quantum, computers, quantum computers" />
+    <meta name="author" content="Veronika Liutarevich" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Share+Tech+Mono&family=Source+Code+Pro&family=Spectral:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Condensed:ital,wght@1,300&family=Share+Tech+Mono&family=Source+Code+Pro&family=Spectral:wght@500&display=swap" 
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel='stylesheet' href=" {% static "assets/css/style_for_scienz.css" %} " />
+    
+   
+  
+
+
+
+<script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;
+if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;
+for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;
+const o=a.querySelector("[data-placeholder-image]"),r=new Image;
+r.src=t {% static '.curren' %} tSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script>
+<link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+<title data-react-helmet="true"></title>
+<link rel="icon" href=" {% static '/favicon-32x32.png?v=53aa06cf17e4239d0dba6ffd09854e02' %} " type="image/png"/>
+<link rel="manifest" href=" {% static '/manifest.webmanifest' %} " crossorigin="anonymous"/>
+
+<link as="script" rel="preload" href=" {% static '/webpack-runtime-7c055bf1ff9131f915ea.js' %} "/>
+<link as="script" rel="preload" href=" {% static '/framework-fa3b7d59246c477b5efb.js' %} "/>
+<link as="script" rel="preload" href=" {% static '/app-d0f2b083c4ed3157418d.js' %} "/><link as="script" rel="preload" href={% static 'ages-index-js-c4c3e775d0beba8b3c4e.js"/>' %} 
+<link as="fetch" rel="preload" href=" {% static '/page-data/index/page-data.json' %} " crossorigin="anonymous"/>
+<link as="fetch" rel="preload" href=" {% static '/page-data/app-data.json' %} " crossorigin="anonymous"/>
+<title>Scien-z</title>
+</head>
+
+<script type = "text/javascript">
+    const colorHeshes=[
+    '#c1d3fe',
+    '#5e60ce',
+    '#fad2e1',
+    '#e6b8a2',
+    '#d8e2dc',
+    '#219ebc',
+    '#e5989b',
+    '#457b9d',
+    '#005f73',
+    '#a0c4ff',
+    '#95d5b2',
+    '#1a759f',
+    '#00afb9',
+    '#abc4ff',
+    '#f28482',
+    '#6d597a',
+    '#aed9e0',
+    '#2c7da0',
+    '#3c096c',
+    '#a5adff',
+    '#455e89',
+];
+    let colorIndex = Math.floor(Math.random()*colorHeshes.length);
+
+    function getColorBlock(){
+        let colorIndex = Math.floor(Math.random()*colorHeshes.length);
+        return colorHeshes[colorIndex]
+        };
+
+    const changeThem=(id)=>{
+        let colorIndex = Math.floor(Math.random()*colorHeshes.length);
+        document.getElementById(id).style.backgroundColor = colorHeshes[colorIndex];
+        /*let colorIndex1 = Math.floor(Math.random()*colorHeshes.length);
+        document.getElementById('chunk2').style.backgroundColor = colorHeshes[colorIndex1];
+        let colorIndex2 = Math.floor(Math.random()*colorHeshes.length);
+        document.getElementById('chunk3').style.backgroundColor = colorHeshes[colorIndex2];*/
+    }
+
+</script>    
+    
+<script type='text/javascript' src=" {% static '/Users/scienz/my-app/text_blocks — копия.js' %} "></script>
+
+<script type='text/javascript' src=" {% static '/Users/scienz/scienz-website/scien-z.com/scienz(gatsby)/src/pages/index.js' %} "</script>
+
+
+<script type='text/javascript' src=" {% static 'src/jqeery-dev — копия.js' %} "></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--<script type='text/javascript' src=" {% static 'assets/js/text_blocks.js' %} "></script>-->
+
+
+<body onload='changeThem("chunk1");
+changeThem("chunk2");
+changeThem("chunk3");
+changeThem("chunk4");
+changeThem("chunk5");
+changeThem("chunk6");
+changeThem("chunk7");
+changeThem("chunk8");
+changeThem("chunk9");
+changeThem("chunk10");
+changeThem("chunk11");
+changeThem("chunk12");
+changeThem("chunk13");
+changeThem("chunk14");
+changeThem("chunk15");
+changeThem("chunk16");
+changeThem("chunk17");
+changeThem("chunk18");
+changeThem("chunk19");
+changeThem("chunk20");
+changeThem("chunk21");
+changeThem("chunk22");
+changeThem("chunk23");
+changeThem("chunk24");'>
+
+
+    
+    <div id='TopMenu'>
+        <div><a href=' {% url 'main:index' %} '><img id='logo' src=' {% static 'assets/img/scienz_logo.png' %} ' /></a></div>
+        <div class='menuSub1'>
+            ..Quant..
+        </div>
+        <div class='menuSub2'>
+            Cosmo
+        </div>
+        <div class='menuSub3'>
+            Atom
+        </div>
+        <div class='menuSub4'>
+            Comps
+        </div>
+
+
+<div class='search_bar_balma'>
+<form class='topnav' method='POST' action='{% url 'main:search_results' %}'>{% csrf_token %}
+    <div class="level-item">
+      <div class="field has-addons">
+        <p class="control">
+
+<input class='input' type='search', placeholder='search:::' arial-label='search' name='searched_thing'>
+
+        </p>
+        <p class="control">
+          <button class="button" type='submit'>
+            Search
+          </button>
+        </p>
+      </div>
+    </div>
+    </form>
+  </div>
+  </div>
+
+
+
+        
+        
+        
+    </div>
+
+
+    <div class='nav-menu hide' id='nav-dropdown1'>
+
+    <span class='titles1'>
+      <ul>
+        <li id='black_body' onClick={black_body_radiation}><a href=' {% url 'main:black_body' %} '>Black body radiation</a></li>
+        <li id='photoelectric_effect'><a href=' {% url 'main:pe_effect' %} '>Photoelectric effect</li>
+        <li><a href=' {% url 'main:atomic_models' %} '>Atomic models</a></li>
+        </ul></span>
+
+        <span class='titles2'>
+        <ul>
+        <li id='h_uncertainty'><a href=' {% url 'main:heisenberg_uncertainty' %} '>Heisenberg's uncertainty principle</a></li>
+        <li id='scroedinger_eq'><a href=' {% url 'main:schr_eq' %} '>Shroedinger's equation</a></li>
+        <li id='feynman'><a href=' {% url 'main:feynman_d' %} '>Feynman diagrams</a></li>
+      </ul></span>
+
+      <span class='titles3'>
+        <ul>
+        <li id='qed'><a href=' {% url 'main:qed' %} '>Quantum electrodynamics</a></li>
+        <li id='higgs'><a href=' {% url 'main:higgs' %} '>Higg's boson</a></li>
+        <li id='s_model'><a href=' {% url 'main:standard_model' %} '>Standard model</li>
+      </ul></span>
+
+
+      
+    
+  </div>
+
+  <div class='nav-menu hide' id='nav-dropdown2' style={left: 8%}>
+
+    <span class='titles1'>
+      <ul>
+        <li id='supernovae'><a href=' {% url 'main:supernovae' %} '>Supernovae</a></li>
+        <li id='black_holes'><a href=' {% url 'main:black_holes' %} '>Black Holes</a></li>
+        <li id='big_bangs'><a href=' {% url 'main:big_bang' %} '>Big Bang</a></li>
+        </ul></span>
+
+        <span class='titles2'>
+        <ul>
+        <li id='star_formation'><a href=' {% url 'main:star_form' %} '>Star formation</a></li>
+        <li id='fusion'><a href=' {% url 'main:thermonuclear_fus' %} '>Thermonuclear fusion</a></li>
+        <li id='galaxies'><a href=' {% url 'main:galaxies' %} '>Galaxies</a></li>
+      </ul></span>
+
+      <span class='titles3'>
+        <ul>
+        <li id='expansion_of_universe'><a href=' {% url 'main:exp_universe' %} '>Expansion of the Universe</a></li>
+        <li id='space_time_curvature'><a href=' {% url 'main:space_time' %} '>Space-time curvature</a></li>
+      </ul></span>
+
+
+      
+    
+  </div>
+
+  <div class='nav-menu hide' id='nav-dropdown3' style='{left: 16%}'>
+
+    <span class='titles1'>
+      <ul>
+        <li id='bohrs_model'><a href=' {% url 'main:bohrs_mod' %} '>Bohr's model</a></li>
+        <li id='b_rad'><a href=' {% url 'main:brem_rad' %} '>Bremstrauhlang radiation</a></li>
+        <li id='ruth_model'><a href=' {% url 'main:ruth_mod' %} '>Rutherford model</a></li>
+        </ul></span>
+
+      <span class='titles2'>
+        <ul>
+        <li id='p_colliders'><a href=' {% static 'main:particle_accelerators' %} '>Particle colliders</a></li>
+      </ul></span>
+
+
+
+
+      
+    
+  </div>
+
+  <div class='nav-menu hide' id='nav-dropdown4' style='{left: 24%}'>
+
+    <span class='titles1'>
+      <ul>
+        <li><link id='q_comp'><a href=' {% url 'main:q_comp' %} '>Quantum computers</a></link></li>
+        <li id='turing_mach'><a href=' {% url 'main:turing_machine' %} '>Turing machine</a></li>
+        <li id='q_comp_lang'><a href=' {% url 'main:qc_alg' %} '>Quantum computing in different languages</a></li>
+        </ul></span>
+
+        <span class='titles2'>
+        <ul>
+        <li id='shors_alg'><a href=' {% url 'main:shors_alg' %} '>Shor's algorithms</a></li>
+        <li id='q_teleportation'><a href=' {% url 'main:q_teleporation' %} '>Quantum teleporation</a></li>
+        
+      </ul></span>
+
+  </div>
+
+
+
+
+
+
+
+            
+
+            
+        
+
+
+           
+            
+</div></div>
+
+{% block content %}
+{% endblock %}
+{% block textarea %}
+{% endblock %}
+
+
+
+
+
+<div class='contact mySlides colorblock_l' id='chunk4'>
+                    <div class='chunks'>
+                        
+                        
+                    <div class='contact'>
+                        
+    <div class="contact">
+      
+      <h4><b>Contact</b> us directly if you have any questions!</h4>
+      <p>
+        Please provide your email address and a message below if you have any questions,
+        and we will get in touch as soon as possible ;)
+        
+      </p>    
+      <form action="" method="post">
+      
+   {% csrf_token %}
+   {{ form|crispy}}
+   <br />
+   <input class='button' type="submit" value="Submit" />
+  
+</form>
+
+      </div></div></div>
+     
+
+
+
+  <footnote class='footing'><p class='footing-text'>Should any questions arise, please email <email>support@scien-z.com</email>. 
+                        We are always happy tohear from fellow scienZists</p></footnote>
+
+
+
+    
+
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        $(document).ready(() => {
+        
+        
+          $('.menuSub1').on('click',() => {
+            $('#nav-dropdown1').slideToggle('0.05s');
+            $('#nav-dropdown2').hide('0.0000000000000005s');
+            $('#nav-dropdown3').hide('0.0000000000000005s');
+            $('#nav-dropdown4').hide('0.0000000000000005s');
+            $('.menuSub1').css('background','rgb(77, 75, 98, 0.3)', '0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+            $('.menuSub2').css('background', '#FFFFFF');
+            $('.menuSub3').css('background', '#FFFFFF');
+            $('.menuSub4').css('background', '#FFFFFF');
+            
+          });
+          $('.menuSub2').on('click',() => {
+            $('#nav-dropdown2').slideToggle('0.05s');
+            $('#nav-dropdown1').hide('0.0000000000000005s');
+            $('#nav-dropdown3').hide('0.0000000000000005s');
+            $('#nav-dropdown4').hide('0.0000000000000005s');
+            $('.menuSub2').css('background', 'rgb(77, 75, 98, 0.3)', '0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+             $('.menuSub1').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub3').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub4').css('background', '#FFFFFF', '0.0000000000000005s');
+          });
+
+          $('.menuSub3').on('click',() => {
+            $('#nav-dropdown3').slideToggle('0.05s');
+            $('#nav-dropdown2').hide('0.0000000000000005s');
+            $('#nav-dropdown1').hide('0.0000000000000005s');
+            $('#nav-dropdown4').hide('0.0000000000000005s');
+            $('.menuSub3').css('background', 'rgb(77, 75, 98, 0.3)', '0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+             $('.menuSub1').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub2').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub4').css('background', '#FFFFFF', '0.0000000000000005s');
+          });
+
+          $('.menuSub4').on('click',() => {
+            $('#nav-dropdown4').slideToggle('0.05s');
+            $('#nav-dropdown2').hide('0.0.0000000000000005s');
+            $('#nav-dropdown3').hide('0.0.0000000000000005s');
+            $('#nav-dropdown1').hide('0.0000000000000005s');
+            $('.menuSub4').css('background', 'rgb(77, 75, 98, 0.3)', '0.0000000000000005s');
+            $('.logingin').slideUp("0.0005s");
+             $('.menuSub1').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub2').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub3').css('background', '#FFFFFF', '0.0000000000000005s');
+            
+          });
+        
+          
+          $('.mySlides').on('click', ()=>{
+            $('#nav-dropdown1').slideUp('0.000005s');
+            $('#nav-dropdown2').slideUp('0.000005s');
+            $('#nav-dropdown3').slideUp('0.000005s');
+            $('#nav-dropdown4').slideUp('0.000005s');
+            $('.menuSub1').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub2').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub3').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub4').css('background', '#FFFFFF', '0.0000000000000005s');
+
+        
+          });
+        
+          $('.topic').on('click', ()=>{
+            $('#nav-dropdown1').slideUp('0.000005s');
+            $('#nav-dropdown2').slideUp('0.000005s');
+            $('#nav-dropdown3').slideUp('0.000005s');
+            $('#nav-dropdown4').slideUp('0.000005s');
+            $('.menuSub1').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub2').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub3').css('background', '#FFFFFF', '0.0000000000000005s');
+            $('.menuSub4').css('background', '#FFFFFF', '0.0000000000000005s');
+        
+          });
+        
+        
+           
+        
+        });
+
+        
+
+
+</script>
+
+
+<script>/*
+
+
+function chunksSliding(row, limit){
+
+   
+          
+          const prevButName='pb'+row;
+          const nextButName='nb'+row;
+          
+  if(limit==1){
+    $('#'+prevButName).hide();
+  }else{   
+        let textForId='text'+row+'.';
+          
+    let objectArray=[];
+          
+    for(let n=1; n<=limit; n++){
+            
+            
+      let slideId=textForId+n;
+       let currentSlide=document.getElementById(slideId);
+       objectArray.splice(n-1, 0, currentSlide);
+        console.log(objectArray)
+          
+          
+          
+          };
+          
+         
+          let index=0;
+          $('#'+prevButName).on('click', ()=>{
+          
+            
+            let currentSlide=objectArray[index];
+              $(currentSlide).hide();
+          
+              let newIndex=objectArray.indexOf(currentSlide)+1;
+              
+          
+              let newSlide=objectArray[newIndex];
+              $(newSlide).show();
+           
+              if (newIndex>0){
+                  $('#'+nextButName).show();
+              };
+              index+=1;
+              if (newIndex===(limit-1)){
+                $('#'+prevButName).hide();
+              }
+              
+          
+          
+          });
+          
+          
+          
+          $('#'+nextButName).on('click', ()=>{
+          
+            
+            let currentSlide=objectArray[index];
+              $(currentSlide).hide();
+          
+              let newIndex=objectArray.indexOf(currentSlide)-1;
+              
+          
+              let newSlide=objectArray[newIndex];
+              $(newSlide).show();
+           
+              if (newIndex<limit){
+                  $('#'+prevButName).show();
+              };
+              index-=1;
+              if (newIndex===0){
+                $('#'+nextButName).hide();
+              }
+              
+          
+          
+          });
+  };
+          };
+
+
+        chunksSliding(1, 1);
+        chunksSliding(2, 6);
+        chunksSliding(3, 1);
+        chunksSliding(4, 1);
+
+
+        chunksSliding(5, 1);
+        chunksSliding(6, 1);
+        chunksSliding(7, 2);
+        chunksSliding(8, 1);
+        chunksSliding(9, 1);
+       
+          */</script>
+
+        
