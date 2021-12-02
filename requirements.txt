@@ -15,7 +15,7 @@ backports.functools-lru-cache==1.6.1
 backports.shutil-get-terminal-size==1.0.0
 backports.tempfile==1.0
 backports.weakref==1.0.post1
-
+numpy==1.21.4
 
 bkcharts==0.2
 
@@ -115,8 +115,8 @@ packaging==20.4
 
 parso==0.7.0
 partd==1.1.0
+pip==21.3.1
 
-pathlib==
 pathtools==0.1.2
 patsy==0.5.1
 
