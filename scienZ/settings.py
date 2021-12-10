@@ -150,7 +150,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
 )'''
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    'https://scien-z.ams3.digitaloceanspaces.com'
 ]
 
 STATICFILES_STORAGE =  'https://scien-z.ams3.digitaloceanspaces.com'
