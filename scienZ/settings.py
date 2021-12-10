@@ -144,9 +144,13 @@ USE_TZ = True
 settings_dir = os.path.dirname(__file__)
 PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
 
-STATICFILES_DIRS = (
+'''STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static/'),
-)
+)'''
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 
 # Static files (CSS, JavaScript, Images)
