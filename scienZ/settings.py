@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # dev example
 from pathlib import Path
 import os
 import sys
@@ -19,6 +19,12 @@ from .cdn.conf import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+
+
+
+
 
 
 # Quick-start development settings - unsuitable for production
