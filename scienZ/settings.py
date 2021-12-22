@@ -25,8 +25,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # dev example
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -175,10 +173,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 '''
 
-AWS_ACCESS_KEY_ID='AETI5RI7FTMTY77Y46GA'
+AWS_ACCESS_KEY_ID='AETI5RI7FTMTY77Y46GA'''
 AWS_SECRET_ACCESS_KEY='6ORZ0t1/oZZ1IS+wKY5ryma91gxDbn7GayWCdnAfl6c'
 
-'''
+
 
 
 
