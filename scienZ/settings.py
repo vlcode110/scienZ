@@ -173,12 +173,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-
+'''
 
 AWS_ACCESS_KEY_ID='AETI5RI7FTMTY77Y46GA'
 AWS_SECRET_ACCESS_KEY='6ORZ0t1/oZZ1IS+wKY5ryma91gxDbn7GayWCdnAfl6c'
 
-
+'''
 
 
 
